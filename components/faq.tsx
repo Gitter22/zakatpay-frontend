@@ -1,48 +1,48 @@
 import {
-  BadgeDollarSign,
-  Route,
-  ShieldCheck,
-  Truck,
-  Undo2,
-  UserRoundCheck,
+  BadgeIndianRupee,
+  Infinity,
+  Shield,
+  DatabaseBackup,
+  FileStack,
+  Lightbulb,
 } from "lucide-react";
 
 const faq = [
   {
-    icon: Undo2,
-    question: "What is your return policy?",
+    icon: BadgeIndianRupee,
+    question: "Is ZakatPay really free to use?",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "Yes. ZakatPay does not charge users for calculation or record-keeping. The full amount of your Zakat goes directly to the recipient. The only costs may be minimal payment processing fees from UPI or the bank.",
   },
   {
-    icon: Route,
-    question: "How do I track my order?",
+    icon: Infinity,
+    question: "How many profiles can I create in ZakatPay?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "You can create separate profiles for each family member or dependent you want to calculate Zakat for. There is no hard limit—manage as many as you need.",
   },
   {
-    icon: Truck,
-    question: "Do you ship internationally?",
+    icon: Shield,
+    question: "How secure is my personal and financial information?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "ZakatPay uses industry-standard security practices to keep your data safe. Your Zakat history, asset information, and payment records are encrypted and accessible only to you.",
   },
   {
-    icon: BadgeDollarSign,
-    question: "What payment methods do you accept?",
+    icon: DatabaseBackup,
+    question: "Can I access my Zakat records later?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "Yes. ZakatPay keeps a permanent record of your calculations and payments. You can access your history at any time from web, tablet, or mobile, and download detailed reports for personal use.",
   },
   {
-    icon: ShieldCheck,
-    question: "What if I receive a damaged item?",
+    icon: FileStack,
+    question: "What if my asset details change before my Zakat anniversary?",
     answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+      "You can update or revise your Zakat calculation as many times as needed before locking it on your anniversary date. This ensures your Zakat is always accurate and up to date.",
   },
   {
-    icon: UserRoundCheck,
-    question: "How can I contact customer support?",
+    icon: Lightbulb,
+    question: "Do I need to know Zakat rules to use the app?",
     answer:
-      "Reach out via email at support@example.com or call us at 1-800-123-4567 for assistance with any inquiries.",
+      "No. ZakatPay guides you step by step. Tooltips, inline help, and an integrated Zakat Guide explain the rules clearly—even if it’s your first time calculating Zakat.",
   },
 ];
 
@@ -57,7 +57,7 @@ const FAQ = () => {
           Frequently Asked Questions
         </h2>
         <p className="mt-3 xs:text-lg text-center text-muted-foreground">
-          Quick answers to common questions about our products and services.
+          Quick answers to common questions about our platform.
         </p>
 
         <div className="mt-12 grid md:grid-cols-2 bg-background rounded-xl overflow-hidden outline outline-[1px] outline-border outline-offset-[-1px]">

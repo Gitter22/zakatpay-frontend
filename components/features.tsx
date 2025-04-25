@@ -1,57 +1,76 @@
 import {
-  Blocks,
-  Bot,
-  ChartPie,
-  Film,
-  MessageCircle,
-  Settings2,
+  Footprints,
+  LayoutGrid,
+  ShieldAlert,
+  Bell,
+  Users,
+  KeyRound,
+  HandCoins,
+  HeartHandshake,
+  LibraryBig,
 } from "lucide-react";
 import React from "react";
 
 const features = [
   {
-    icon: Settings2,
-    title: "Customizable Layouts",
+    icon: Footprints,
+    title: "Guided step-by-step process",
     description:
-      "Design your space with drag-and-drop simplicity—create grids, lists, or galleries in seconds.",
+      "No expertise needed; the app walks you through the entire Zakat calculation process.",
   },
   {
-    icon: Blocks,
-    title: "Interactive Widgets",
+    icon: LayoutGrid,
+    title: "Covers 15+ asset types",
     description:
-      "Embed polls, quizzes, or forms to keep your audience engaged.",
+      "Suitable for salaried individuals, business owners, homemakers, and more",
   },
   {
-    icon: Bot,
-    title: "AI-Powered Tools",
-    description:
-      "Generate summaries, auto-format content, or translate into multiple languages seamlessly.",
+    icon: ShieldAlert,
+    title: "Separate Interest Disposal",
+    description: "Helps purify your income from unintended interest sources.",
   },
   {
-    icon: Film,
-    title: "Media Integrations",
-    description:
-      "Connect with Spotify, Instagram, or your own media library for dynamic visuals and sound.",
+    icon: Bell,
+    title: "Automated reminders for your Zakat Anniversary",
+    description: "Ensures you never miss your set due date.",
   },
   {
-    icon: ChartPie,
-    title: "Advanced Analytics",
+    icon: Users,
+    title: "Manage Zakat for Multiple People",
     description:
-      "Track engagement, clicks, and user activity with intuitive charts and reports.",
+      "Create separate profiles for family members and dependents, all in one place.",
   },
   {
-    icon: MessageCircle,
-    title: "Seamless Collaboration",
+    icon: KeyRound,
+    title: "Securely store past records",
+    description: "No need for spreadsheets or separate logs.",
+  },
+
+  {
+    icon: HandCoins,
+    title: "Pay directly from the app",
     description:
-      "Comment, tag, and assign tasks directly within your documents.",
+      "Pay to trusted institutions, individuals or discover new causes.",
+  },
+  {
+    icon: LibraryBig,
+    title: "Comprehensive Zakat Guide",
+    description:
+      "Integrated knowledge base explaining Zakat rules and categories.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "100% Free & Transparent",
+    description:
+      "ZakatPay does not charge users; all funds go directly to recipients.",
   },
 ];
 
 const Features = () => {
   return (
-    <div id="features" className="w-full py-12 xs:py-20 px-6">
+    <section id="features" className="w-full py-12 xs:py-20 px-6">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
-        Unleash Your Creativity
+        How ZakatPay helps?
       </h2>
       <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature) => (
@@ -69,7 +88,7 @@ const Features = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

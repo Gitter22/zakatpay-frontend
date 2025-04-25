@@ -27,16 +27,16 @@ export default function CTABanner() {
         />
         <div className="relative z-0 flex flex-col gap-3">
           <h3 className="text-3xl md:text-4xl font-semibold">
-            Ready to Elevate Your Experience?
+            Start Your Zakat Journey with Confidence
           </h3>
           <p className="mt-2 text-base md:text-lg">
-            Take your workflow to the next level with Shadcn UI Blocks. Sign up
-            today and start exploring!
+            Accurately calculate, record, and pay your Zakat – all in one place.
           </p>
         </div>
         <div className="relative z-0 mt-14 flex flex-col sm:flex-row gap-4">
           <Button size="lg">
-            Get Started <ArrowUpRight className="!h-5 !w-5" />
+            Join the waitlist
+            <ArrowUpRight className="!h-5 !w-5" />
           </Button>
           <Button size="lg" variant="outline">
             Discover More <Forward className="!h-5 !w-5" />

@@ -1,45 +1,93 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
-import React from "react";
-import LogoCloud from "./logo-cloud";
+// import { ChevronRightIcon } from "lucide-react";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <div className="min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-6">
-      <div className="md:mt-6 flex items-center justify-center">
-        <div className="text-center max-w-2xl">
-          <Badge className="bg-primary rounded-full py-1 border-none">
-            v1.0.0 is available now! 🚀
-          </Badge>
-          <h1 className="mt-6 max-w-[20ch] text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold !leading-[1.2] tracking-tight">
-            Customized Shadcn UI Blocks & Components
-          </h1>
-          <p className="mt-6 max-w-[60ch] xs:text-lg">
-            Explore a collection of Shadcn UI blocks and components, ready to
-            preview and copy. Streamline your development workflow with
-            easy-to-implement examples.
-          </p>
-          <div className="mt-12 flex flex-col sm:flex-row items-center sm:justify-center gap-4">
-            <Button
-              size="lg"
-              className="w-full sm:w-auto rounded-full text-base"
+    <>
+      {/* Hero */}
+      <section>
+        <div className="container mx-auto px-4 py-24 md:px-6 lg:py-32 2xl:max-w-[1400px]">
+          {/* Announcement Banner */}
+          {/* <div className="flex justify-center">
+            <a
+              className="inline-flex items-center gap-x-2 rounded-full border p-1 ps-3 text-sm transition"
+              href="#"
             >
-              Get Started <ArrowUpRight className="!h-5 !w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto rounded-full text-base shadow-none"
-            >
-              <CirclePlay className="!h-5 !w-5" /> Watch Demo
+              PRO release - Join to waitlist
+              <span className="bg-muted-foreground/15 inline-flex items-center justify-center gap-x-2 rounded-full px-2.5 py-1.5 text-sm font-semibold">
+                <svg
+                  className="h-4 w-4 flex-shrink-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </span>
+            </a>
+          </div> */}
+          {/* End Announcement Banner */}
+          {/* Title */}
+          <div className="mx-auto mt-5 max-w-2xl text-center">
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+              ZakatPay - The Smart Way to Calculate and Pay Your Zakat
+            </h1>
+          </div>
+          {/* End Title */}
+          <div className="mx-auto mt-5 max-w-3xl text-center">
+            <p className="text-muted-foreground text-xl">
+              Zakat is a fundamental pillar of Islam, but calculating and
+              disbursing it can be complicated.{" "}
+              <span className="text-foreground font-bold">ZakatPay</span>{" "}
+              simplifies the entire process, ensuring your Zakat is accurate,
+              recorded, and impactful.
+            </p>
+          </div>
+          {/* Buttons */}
+          <div className="mt-8 flex justify-center gap-3">
+            <Button size={"lg"}>Join the waitlist</Button>
+            <Button size={"lg"} variant={"outline"}>
+              Learn more
             </Button>
           </div>
+          {/* End Buttons */}
+          {/* <div className="mt-5 flex items-center justify-center gap-x-1 sm:gap-x-3">
+            <span className="text-muted-foreground text-sm">
+              Package Manager:
+            </span>
+            <span className="text-sm font-bold">npm </span>
+            <svg
+              className="text-muted-foreground h-5 w-5"
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 13L10 3"
+                stroke="currentColor"
+                strokeLinecap="round"
+              />
+            </svg>
+            <a
+              className="inline-flex items-center gap-x-1 text-sm font-medium decoration-2 hover:underline"
+              href="#"
+            >
+              Installation Guide
+              <ChevronRightIcon className="h-4 w-4 flex-shrink-0" />
+            </a>
+          </div> */}
         </div>
-      </div>
-      <LogoCloud className="mt-24 max-w-3xl mx-auto" />
-    </div>
+      </section>
+      {/* End Hero */}
+    </>
   );
-};
-
-export default Hero;
+}

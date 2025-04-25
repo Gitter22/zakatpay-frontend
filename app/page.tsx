@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import Pricing from "@/components/pricing";
+import Problem from "@/components/problem";
 import Testimonials from "@/components/testimonials";
 
 export default function Home() {
@@ -13,10 +14,11 @@ export default function Home() {
       <Navbar />
       <main className="pt-16 xs:pt-20 sm:pt-24">
         <Hero />
+        <Problem />
         <Features />
-        <Pricing />
+        {/* <Pricing /> */}
         <FAQ />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <CTABanner />
         <Footer />
       </main>
